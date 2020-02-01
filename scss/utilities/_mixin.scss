@@ -1,0 +1,13 @@
+@mixin placeholder-style {
+    font-style: italic;
+    padding-left: 10px;
+    color: $base-color;
+}
+
+@mixin base-style {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    @content;
+}

@@ -1,0 +1,28 @@
+section {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#search {
+    width: 90%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 2px solid $base-color;
+    border-radius: 4px;
+    @media (min-width: $mobile) {
+        width: 450px;
+    }
+}
+
+::-webkit-input-placeholder { // Edge 
+    @include placeholder-style;
+  }
+  
+:-ms-input-placeholder { // Internet Explorer 10-11
+    @include placeholder-style;
+  }
+  
+::placeholder {
+    @include placeholder-style;
+  }
