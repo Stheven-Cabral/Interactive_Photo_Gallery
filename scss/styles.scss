@@ -1,6 +1,8 @@
+// variables import
+@import 'utilities/variables.scss';
+
 // Base imports
 @import 'base/_normalize.scss';
-@import 'base/_typography.scss';
 
 // Components imports
 @import 'components/_layout.scss';
