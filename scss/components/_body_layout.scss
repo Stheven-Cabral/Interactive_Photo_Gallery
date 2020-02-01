@@ -2,14 +2,19 @@ body {
     @include base-style;
 }
 
-main {
-    width: 75%;
-    margin: auto;
-}
-
 #thumb-list {
     @include base-style {
         padding: 0px;
         list-style: none;
+    }
+}
+
+.thumb a {
+    @include base-style;
+}
+
+main {
+    @media (min-width: $larger) {
+        max-width: 1100px;
     }
 }
