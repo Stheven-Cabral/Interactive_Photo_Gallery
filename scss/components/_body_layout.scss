@@ -2,7 +2,7 @@ body {
     @include base-style;
 }
 
-#thumb-list {
+#lightgallery {
     @include base-style {
         padding: 0px;
         list-style: none;

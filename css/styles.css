@@ -366,7 +366,7 @@ body {
           justify-content: center;
 }
 
-#thumb-list {
+#lightgallery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -463,5 +463,14 @@ section {
 #lightgallery img:hover {
   -webkit-transform: scale(1.05, 1.05);
           transform: scale(1.05, 1.05);
+}
+
+/*lightbox styling*/
+.lightbox img {
+  border: none;
+}
+
+.lightbox__caption p {
+  font-size: 1.1rem;
 }
 /*# sourceMappingURL=styles.css.map */

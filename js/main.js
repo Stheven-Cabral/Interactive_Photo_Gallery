@@ -1,1 +1,5 @@
-$(".js-smartPhoto").smartPhoto();
+$('.gallery a').lightbox({
+    margin: 200,
+    
+
+});
