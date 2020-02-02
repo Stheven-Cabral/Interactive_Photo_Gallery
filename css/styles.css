@@ -452,7 +452,7 @@ section {
   color: #e2e2e2;
 }
 
-.thumb img {
+#lightgallery img {
   margin: 30px;
   -webkit-box-shadow: 5px 5px 5px #e2e2e2;
           box-shadow: 5px 5px 5px #e2e2e2;
@@ -460,7 +460,7 @@ section {
   transition: all .4s;
 }
 
-.thumb img:hover {
+#lightgallery img:hover {
   -webkit-transform: scale(1.05, 1.05);
           transform: scale(1.05, 1.05);
 }
