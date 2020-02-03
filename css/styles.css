@@ -1,4 +1,4 @@
-/*base styling impotys*/
+/*Base styling imports.*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -342,15 +342,19 @@ template {
   display: none;
 }
 
+/*Base font sytling*/
 body {
   font-family: 'Libre Caslon Text', serif;
   font-size: 1.25rem;
 }
 
-/*variables and mixins styling imports*/
+/*Variable and mixin styling imports.*/
 /* Color Variables */
 /*Component Variables*/
-/*Component styling imports*/
+/*Mixin used to style the layout of the gallery.*/
+/*Mixin used to style the 'Search' placeholder.*/
+/*Mixin used to style the gallery thumbnails.*/
+/*Component styling imports.*/
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -383,27 +387,14 @@ body {
   list-style: none;
 }
 
-.thumb a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
+/*Added a media query to restrict the gallery width for larger resolutions.*/
 @media (min-width: 1000px) {
   main {
     max-width: 1100px;
   }
 }
 
+/*Styling for the search bar and search bar section. */
 section {
   width: 100%;
   text-align: center;
@@ -412,8 +403,7 @@ section {
 
 #search {
   width: 90%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px;
   border: 2px solid #e2e2e2;
   border-radius: 4px;
 }
@@ -424,34 +414,38 @@ section {
   }
 }
 
-#search:hover {
+#search:hover, #search:focus {
   border: 2px solid black;
 }
 
+/* The follow adjusts the 'Search' placeholder position in different browsers. */
 ::-webkit-input-placeholder {
+  /*Edge*/
   font-style: italic;
-  padding-left: 10px;
+  padding-left: 5px;
   color: #e2e2e2;
 }
 
 :-ms-input-placeholder {
+  /*Internet Explorer 10-11*/
   font-style: italic;
-  padding-left: 10px;
+  padding-left: 5px;
   color: #e2e2e2;
 }
 
 ::-ms-input-placeholder {
   font-style: italic;
-  padding-left: 10px;
+  padding-left: 5px;
   color: #e2e2e2;
 }
 
 ::placeholder {
   font-style: italic;
-  padding-left: 10px;
+  padding-left: 5px;
   color: #e2e2e2;
 }
 
+/*Styling for gallery thumbnail images. */
 #lightgallery img {
   margin: 30px;
   -webkit-box-shadow: 5px 5px 5px #e2e2e2;
@@ -465,7 +459,7 @@ section {
           transform: scale(1.05, 1.05);
 }
 
-/*lightbox styling*/
+/*Adjust some of the lightbox styling.*/
 .lightbox img {
   border: none;
 }

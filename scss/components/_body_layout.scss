@@ -1,3 +1,4 @@
+
 body {
     @include base-style;
 }
@@ -9,10 +10,7 @@ body {
     }
 }
 
-.thumb a {
-    @include base-style;
-}
-
+/*Added a media query to restrict the gallery width for larger resolutions.*/
 main {
     @media (min-width: $larger) {
         max-width: 1100px;

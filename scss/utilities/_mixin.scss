@@ -1,9 +1,4 @@
-@mixin placeholder-style {
-    font-style: italic;
-    padding-left: 10px;
-    color: $base-color;
-}
-
+/*Mixin used to style the layout of the gallery.*/
 @mixin base-style {
     display: flex;
     flex-direction: row;
@@ -12,6 +7,14 @@
     @content;
 }
 
+/*Mixin used to style the 'Search' placeholder.*/
+@mixin placeholder-style {
+    font-style: italic;
+    padding-left: 5px;
+    color: $base-color;
+}
+
+/*Mixin used to style the gallery thumbnails.*/
 @mixin shadows {
     box-shadow: 5px 5px 5px $base-color;
     @content;
