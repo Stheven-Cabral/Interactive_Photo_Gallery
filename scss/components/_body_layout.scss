@@ -3,6 +3,10 @@ body {
     @include base-style;
 }
 
+main {
+    width: 100%;
+}
+
 #lightgallery {
     @include base-style {
         padding: 0px;
